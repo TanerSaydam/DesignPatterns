@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CreationalDesignPatterns.Builder
+namespace CreationalDesignPatterns.Builder.Models1
 {
     internal class CarBuilder
     {
@@ -21,7 +21,7 @@ namespace CreationalDesignPatterns.Builder
             return this;
         }
 
-        public CarBuilder SetEnginePower(int enginePower) 
+        public CarBuilder SetEnginePower(int enginePower)
         {
             car.EnginePower = enginePower;
             return this;

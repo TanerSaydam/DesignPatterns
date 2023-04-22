@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CreationalDesignPatterns.Builder
+namespace CreationalDesignPatterns.Builder.Models1
 {
     internal class CarDirector
     {

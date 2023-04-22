@@ -1,4 +1,7 @@
-﻿namespace CreationalDesignPatterns.Builder
+﻿using CreationalDesignPatterns.Builder.Models1;
+using CreationalDesignPatterns.Builder.Models2;
+
+namespace CreationalDesignPatterns.Builder
 {
     internal class Program
     {
@@ -6,6 +9,9 @@
         {
             Car familyCar = new CarDirector().BuildFamilyCar();
             Car sportCar = new CarDirector().BuildSportCar();
+
+            Product product = new ProductDirector().BuildProduct("Mavi", "XL", "Nike");
+
             Console.WriteLine("Hello, World!");
         }
     }
