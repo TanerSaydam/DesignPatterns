@@ -1,4 +1,5 @@
 ﻿using StructuralDesignPatterns.Adapter.Adapter1;
+using StructuralDesignPatterns.Adapter.Adapter2;
 
 namespace StructuralDesignPatterns.Adapter
 {
@@ -6,19 +7,29 @@ namespace StructuralDesignPatterns.Adapter
     {
         static void Main(string[] args)
         {
-            //Paypal
-            IPayment payment1 = new PaypalPayment();
-            ShoppingCart shoppingCart1 = new ShoppingCart(payment1);
-            shoppingCart1.CheckOut(100);
+            ////Paypal
+            //IPayment payment1 = new PaypalPayment();
+            //ShoppingCart shoppingCart1 = new ShoppingCart(payment1);
+            //shoppingCart1.CheckOut(100);
 
-            //Stripe
-            IPayment payment2 = new StripPaymentAdapter();
-            bool result = payment2.MakePayment(100);
+            ////Stripe
+            //IPayment payment2 = new StripPaymentAdapter();
+            //bool result = payment2.MakePayment(100);
 
-            //PayU
-            IPayment payment3 = new PayUPaymentAdapter();
-            ShoppingCart shoppingCart3 = new(payment3);
-            shoppingCart3.CheckOut(100);
+            ////PayU
+            //IPayment payment3 = new PayUPaymentAdapter();
+            //ShoppingCart shoppingCart3 = new(payment3);
+            //shoppingCart3.CheckOut(100);
+
+            //MySql
+            IDatabase database1 = new MySqlDatabase();
+            database1.Connect();
+            database1.ExecuteQuery("Select * From Users");
+
+            //MSSql
+            IDatabase database2 = new SqlServerAdapter();
+            database2.Connect();
+            database2.ExecuteQuery("Select * From Users");
 
             Console.WriteLine("Hello, World!");
         }
