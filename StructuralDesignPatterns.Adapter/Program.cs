@@ -1,5 +1,6 @@
 ﻿using StructuralDesignPatterns.Adapter.Adapter1;
 using StructuralDesignPatterns.Adapter.Adapter2;
+using StructuralDesignPatterns.Adapter.Odev1;
 
 namespace StructuralDesignPatterns.Adapter
 {
@@ -21,15 +22,23 @@ namespace StructuralDesignPatterns.Adapter
             //ShoppingCart shoppingCart3 = new(payment3);
             //shoppingCart3.CheckOut(100);
 
-            //MySql
-            IDatabase database1 = new MySqlDatabase();
-            database1.Connect();
-            database1.ExecuteQuery("Select * From Users");
+            ////MySql
+            //IDatabase database1 = new MySqlDatabase();
+            //database1.Connect();
+            //database1.ExecuteQuery("Select * From Users");
 
-            //MSSql
-            IDatabase database2 = new SqlServerAdapter();
-            database2.Connect();
-            database2.ExecuteQuery("Select * From Users");
+            ////MSSql
+            //IDatabase database2 = new SqlServerAdapter();
+            //database2.Connect();
+            //database2.ExecuteQuery("Select * From Users");
+
+            //XML
+            IFileConverter fileConverter1 = new XMLConvert();
+            fileConverter1.Convert("Deneme");
+
+            //JSON
+            IFileConverter fileConverter2 = new JSONConvertAdapter();
+            fileConverter2.Convert("Deneme");
 
             Console.WriteLine("Hello, World!");
         }
