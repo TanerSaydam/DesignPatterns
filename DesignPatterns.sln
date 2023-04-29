@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPatterns.Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPatterns.FlyWeight", "StructuralDesignPatterns.FlyWeight\StructuralDesignPatterns.FlyWeight.csproj", "{A68D4383-E771-4E9A-AA6E-26AD2DDBD77F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPatterns.Proxy", "StructuralDesignPatterns.Proxy\StructuralDesignPatterns.Proxy.csproj", "{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{A68D4383-E771-4E9A-AA6E-26AD2DDBD77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A68D4383-E771-4E9A-AA6E-26AD2DDBD77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A68D4383-E771-4E9A-AA6E-26AD2DDBD77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
