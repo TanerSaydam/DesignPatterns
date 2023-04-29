@@ -1,5 +1,6 @@
 ﻿using StructuralDesignPatterns.Decorator.Decorator1;
 using StructuralDesignPatterns.Decorator.Decorator2;
+using StructuralDesignPatterns.Decorator.Odev1;
 
 namespace StructuralDesignPatterns.Decorator
 {
@@ -14,11 +15,16 @@ namespace StructuralDesignPatterns.Decorator
             //Console.WriteLine($"{espressoWithMilk.Description}: {espressoWithMilk.Cost()}$");
             //Console.WriteLine("Hello, World!");
 
-            UIComponent button = new Button();
+            //UIComponent button = new Button();
             //button.Display();
 
-            UIComponent buttonWithBorder = new BorderDecoratoer(button);
-            buttonWithBorder.Display();
+            //UIComponent buttonWithBorder = new BorderDecoratoer(button);
+            //buttonWithBorder.Display();
+
+            IService basicService = new BasicService();
+            IService authorizationService = new AuthorizationDecorator(basicService);
+
+            authorizationService.Execute();
         }
     }
 }
