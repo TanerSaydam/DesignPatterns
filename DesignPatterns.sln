@@ -34,9 +34,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.Fl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.Proxy", "StructuralDesignPatterns.Proxy\StructuralDesignPatterns.Proxy.csproj", "{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPatterns.ChainOfResponsibility", "BehavioralDesignPatterns.ChainOfResponsibility\BehavioralDesignPatterns.ChainOfResponsibility.csproj", "{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehavioralDesignPatterns.ChainOfResponsibility", "BehavioralDesignPatterns.ChainOfResponsibility\BehavioralDesignPatterns.ChainOfResponsibility.csproj", "{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPatterns.Command", "BehavioralDesignPatterns.Command\BehavioralDesignPatterns.Command.csproj", "{6F558C87-D66E-46B5-92D3-F383BFC448BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehavioralDesignPatterns.Command", "BehavioralDesignPatterns.Command\BehavioralDesignPatterns.Command.csproj", "{6F558C87-D66E-46B5-92D3-F383BFC448BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPattern.Iterator", "BehavioralDesignPattern.Iterator\BehavioralDesignPattern.Iterator.csproj", "{2E9108A7-C31E-465D-8A59-90B0FD07D06C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -104,6 +106,10 @@ Global
 		{6F558C87-D66E-46B5-92D3-F383BFC448BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F558C87-D66E-46B5-92D3-F383BFC448BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F558C87-D66E-46B5-92D3-F383BFC448BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
