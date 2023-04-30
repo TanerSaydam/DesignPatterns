@@ -28,11 +28,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.Decorator", "StructuralDesignPatterns.Decorator\StructuralDesignPatterns.Decorator.csproj", "{399829B0-71AB-438D-89C6-5438BD03ACC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPatterns.Facade", "StructuralDesignPatterns.Facade\StructuralDesignPatterns.Facade.csproj", "{4148C822-2E08-4B4C-B1E2-46A2BBF74860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.Facade", "StructuralDesignPatterns.Facade\StructuralDesignPatterns.Facade.csproj", "{4148C822-2E08-4B4C-B1E2-46A2BBF74860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPatterns.FlyWeight", "StructuralDesignPatterns.FlyWeight\StructuralDesignPatterns.FlyWeight.csproj", "{A68D4383-E771-4E9A-AA6E-26AD2DDBD77F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.FlyWeight", "StructuralDesignPatterns.FlyWeight\StructuralDesignPatterns.FlyWeight.csproj", "{A68D4383-E771-4E9A-AA6E-26AD2DDBD77F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPatterns.Proxy", "StructuralDesignPatterns.Proxy\StructuralDesignPatterns.Proxy.csproj", "{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralDesignPatterns.Proxy", "StructuralDesignPatterns.Proxy\StructuralDesignPatterns.Proxy.csproj", "{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPatterns.ChainOfResponsibility", "BehavioralDesignPatterns.ChainOfResponsibility\BehavioralDesignPatterns.ChainOfResponsibility.csproj", "{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2E9FBC-DB0A-460D-92FA-600852E4B4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4B0DFC-61B2-468F-BF3A-77A60C98EDD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
