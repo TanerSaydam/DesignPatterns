@@ -1,5 +1,5 @@
 ﻿using BehavioralDesignPatterns.ChainOfResponsibility.ChainOfResponsibility1;
-using BehavioralDesignPatterns.ChainOfResponsibility.ChainOfResponsibility2;
+using BehavioralDesignPatterns.ChainOfResponsibility.Odev1;
 
 namespace BehavioralDesignPatterns.ChainOfResponsibility
 {
@@ -21,24 +21,37 @@ namespace BehavioralDesignPatterns.ChainOfResponsibility
             //Console.WriteLine($"Sale 1 Amount: {sale1.Amount} \nDiscount: {sale1.Discount} \nFinal Amount: {sale1.FinalDiscount}");
             //Console.WriteLine($"Sale 2 Amount: {sale2.Amount} \nDiscount: {sale2.Discount} \nFinal Amount: {sale2.FinalDiscount}");
 
-            Application application = new()
-            {
-                Adi = "Taner Saydam",
-                MezuniyetDerecesi = 3m,
-                DilSeviyesi = 2,
-                TecrubeYili = 0,
-            };
+            //Application application = new()
+            //{
+            //    Adi = "Taner Saydam",
+            //    MezuniyetDerecesi = 3m,
+            //    DilSeviyesi = 2,
+            //    TecrubeYili = 0,
+            //};
 
-            ApplicationHandler handler1 = new MezuniyetDerecesiHandler();
-            ApplicationHandler handler2 = new DilSeviyesiHandler();
-            ApplicationHandler handler3 = new TecrubeYiliHandler();
+            //ApplicationHandler handler1 = new MezuniyetDerecesiHandler();
+            //ApplicationHandler handler2 = new DilSeviyesiHandler();
+            //ApplicationHandler handler3 = new TecrubeYiliHandler();
 
-            handler1.SetNextHandler(handler2);
-            handler2.SetNextHandler(handler3);
+            //handler1.SetNextHandler(handler2);
+            //handler2.SetNextHandler(handler3);
 
-            handler1.CheckUserForJob(application);
+            //handler1.CheckUserForJob(application);
 
-            Console.WriteLine($"Application for {application.Adi} is {(application.KabulEdildiMi ? "accepted" : "rejected")}.");
+            //Console.WriteLine($"Application for {application.Adi} is {(application.KabulEdildiMi ? "accepted" : "rejected")}.");
+
+            Order order = new("Taner Saydam", 300);
+
+            Odev1.DiscountHandler bronzeHandler = new BronzeCustomerDiscountHandler();
+            Odev1.DiscountHandler silverHandler = new SilverCustomerDiscountHandler();
+            Odev1.DiscountHandler goldHandler = new GoldCustomerDiscountHandler();
+
+            bronzeHandler.SetNextHandler(silverHandler);
+            silverHandler.SetNextHandler(goldHandler);
+
+            bronzeHandler.ApplyDiscount(order);
+
+            Console.WriteLine($"Customer: {order.CustomerName}\nAmount: {order.Amount}$\nDiscount: {order.Discount}$\nTotal: {order.Total}$");
 
         }
     }
