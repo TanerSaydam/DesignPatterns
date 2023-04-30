@@ -1,4 +1,5 @@
-﻿using StructuralDesignPatterns.Proxy.Proxy1;
+﻿using StructuralDesignPatterns.Proxy.Odev1;
+using StructuralDesignPatterns.Proxy.Proxy1;
 using StructuralDesignPatterns.Proxy.Proxy2;
 
 namespace StructuralDesignPatterns.Proxy
@@ -17,7 +18,11 @@ namespace StructuralDesignPatterns.Proxy
             //secureFileReader2.ReadFile("Önemli Bilgiler 1");
             //Console.WriteLine("Hello, World!");
 
+            IMessageSender secureMessageSender1 = new SecureMessageSender("Admin");
+            secureMessageSender1.SendMessage("Merhaba, naber!");
 
+            IMessageSender secureMessageSender2 = new SecureMessageSender("User");
+            secureMessageSender2.SendMessage("Merhaba, naber!");
         }
     }
 }
