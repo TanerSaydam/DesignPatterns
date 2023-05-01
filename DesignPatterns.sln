@@ -40,6 +40,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehavioralDesignPatterns.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPattern.Iterator", "BehavioralDesignPattern.Iterator\BehavioralDesignPattern.Iterator.csproj", "{2E9108A7-C31E-465D-8A59-90B0FD07D06C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPatterns.Interpreter", "BehavioralDesignPatterns.Interpreter\BehavioralDesignPatterns.Interpreter.csproj", "{A7339F83-BBE4-420F-8CD6-0DE1B8E275EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +112,10 @@ Global
 		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E9108A7-C31E-465D-8A59-90B0FD07D06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7339F83-BBE4-420F-8CD6-0DE1B8E275EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7339F83-BBE4-420F-8CD6-0DE1B8E275EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7339F83-BBE4-420F-8CD6-0DE1B8E275EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7339F83-BBE4-420F-8CD6-0DE1B8E275EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
