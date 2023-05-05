@@ -1,4 +1,5 @@
 ﻿using BehavioralDesignPatterns.Visitor.Visitor1;
+using BehavioralDesignPatterns.Visitor.Visitor2;
 
 namespace BehavioralDesignPatterns.Visitor
 {
@@ -8,12 +9,20 @@ namespace BehavioralDesignPatterns.Visitor
         {
             //Console.WriteLine("Hello, World!");
 
-            var elements = new IElement[] { new ConcreteElementA(), new ConcreteElementB() };
-            var visitor = new ConcreteVisitor();
+            //var elements = new IElement[] { new ConcreteElementA(), new ConcreteElementB() };
+            //var visitor = new ConcreteVisitor();
 
-            foreach (var element in elements)
+            //foreach (var element in elements)
+            //{
+            //    element.Accept(visitor);
+            //}
+
+            var products = new IProduct[] { new Book(100), new Electronic(200) };
+            var taxCalculator = new TaxCalculator();
+
+            foreach (var product in products)
             {
-                element.Accept(visitor);
+                product.Accept(taxCalculator);
             }
 
             Console.ReadKey();

@@ -1,52 +1,51 @@
-﻿namespace BehavioralDesignPatterns.Visitor.Visitor1
+﻿namespace BehavioralDesignPatterns.Visitor.Visitor1;
+
+public interface IElement
 {
-    public interface IElement
+    void Accept(IVisitor visitor);
+}
+
+public class ConcreteElementA : IElement
+{
+    public void Accept(IVisitor visitor)
     {
-        void Accept(IVisitor visitor);
+        visitor.Visit(this);
     }
 
-    public class ConcreteElementA : IElement
+    public string OperationA()
     {
-        public void Accept(IVisitor visitor)
-        {
-            visitor.Visit(this);
-        }
+        return "ConcreteElementA işlemi";
+    }
+}
 
-        public string OperationA()
-        {
-            return "ConcreteElementA işlemi";
-        }
+public class ConcreteElementB : IElement
+{
+    public void Accept(IVisitor visitor)
+    {
+        visitor.Visit(this);
     }
 
-    public class ConcreteElementB : IElement
+    public string OperationB()
     {
-        public void Accept(IVisitor visitor)
-        {
-            visitor.Visit(this);
-        }
+        return "ConcreteElementB işlemi";
+    }
+}
 
-        public string OperationB()
-        {
-            return "ConcreteElementB işlemi";
-        }
+public interface IVisitor
+{
+    void Visit(ConcreteElementA elementA);
+    void Visit(ConcreteElementB elementB);
+}
+
+public class ConcreteVisitor : IVisitor
+{
+    public void Visit(ConcreteElementA elementA)
+    {
+        Console.WriteLine($"ConcreteVisitor ziyaterçisi, {elementA.OperationA()} işlemi gerçekleştiriyor.");
     }
 
-    public interface IVisitor
+    public void Visit(ConcreteElementB elementB)
     {
-        void Visit(ConcreteElementA elementA);
-        void Visit(ConcreteElementB elementB);
-    }
-
-    public class ConcreteVisitor : IVisitor
-    {
-        public void Visit(ConcreteElementA elementA)
-        {
-            Console.WriteLine($"ConcreteVisitor ziyaterçisi, {elementA.OperationA()} işlemi gerçekleştiriyor.");
-        }
-
-        public void Visit(ConcreteElementB elementB)
-        {
-            Console.WriteLine($"ConcreteVisitor ziyaterçisi, {elementB.OperationB()} işlemi gerçekleştiriyor.");
-        }
+        Console.WriteLine($"ConcreteVisitor ziyaterçisi, {elementB.OperationB()} işlemi gerçekleştiriyor.");
     }
 }
