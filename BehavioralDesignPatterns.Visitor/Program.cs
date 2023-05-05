@@ -1,4 +1,5 @@
-﻿using BehavioralDesignPatterns.Visitor.Visitor1;
+﻿using BehavioralDesignPatterns.Visitor.Odev1;
+using BehavioralDesignPatterns.Visitor.Visitor1;
 using BehavioralDesignPatterns.Visitor.Visitor2;
 
 namespace BehavioralDesignPatterns.Visitor
@@ -17,12 +18,20 @@ namespace BehavioralDesignPatterns.Visitor
             //    element.Accept(visitor);
             //}
 
-            var products = new IProduct[] { new Book(100), new Electronic(200) };
-            var taxCalculator = new TaxCalculator();
+            //var products = new IProduct[] { new Book(100), new Electronic(200) };
+            //var taxCalculator = new TaxCalculator();
 
-            foreach (var product in products)
+            //foreach (var product in products)
+            //{
+            //    product.Accept(taxCalculator);
+            //}
+
+            var oduller = new IOdul[] { new AkademikOdul(), new SporOdulu() };
+            var odulPuanHesaplayici = new OdulPuanHesaplayicisi();
+
+            foreach (var odul in oduller)
             {
-                product.Accept(taxCalculator);
+                odul.KabulEt(odulPuanHesaplayici);
             }
 
             Console.ReadKey();
